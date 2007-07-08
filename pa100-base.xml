@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <sim>
+ 
+  <author>BARANGER Emmanuel (3D) David Megginson (FDM)</author>
+  <aircraft-version>0.2</aircraft-version>
+  <status>0.1 Alpha</status>
+   
+  <fuel-fraction>0.8</fuel-fraction>
+  
+  <startup>
+   <splash-texture>Aircraft/payen-pa100/pa100-splash.rgb</splash-texture>
+  </startup>
+  
+  <systems>
+   <electrical>
+    <path>Aircraft/j3cub/cub-electrical.xml</path>
+   </electrical>
+  </systems> 
+
+  <sound>
+   <path>Aircraft/Generic/generic-sound.xml</path>
+  </sound>
+
+  <panel>
+   <visibility archive="n">false</visibility>
+  </panel>
+
+  <model>
+   <path archive="y">Aircraft/payen-pa100/Models/pa100.xml</path>
+  </model>
+  
+  <view>
+   <internal archive="y">true</internal>
+   <config>
+     <x-offset-m archive="y"> 0.000 </x-offset-m>	<!-- Right -->
+     <y-offset-m archive="y"> 0.705 </y-offset-m>	<!-- Up    -->
+     <z-offset-m archive="y"> 0.910 </z-offset-m>	<!-- Back  -->
+     <pitch-offset-deg> 0.000 </pitch-offset-deg>
+   </config>
+  </view>
+
+ </sim>
+
+ <yasim>
+  <pa100>
+   <pilot-lb>180</pilot-lb>
+  </pa100>
+ </yasim>
+
+ <engines>
+  <engine>
+   <rpm type="double">700</rpm>
+  </engine>
+ </engines>
+
+ <input>
+  <keyboard include="Nasal/pa100-keyboard.xml"/>
+ </input>
+ 
+ <nasal>
+   <pa100>
+     <file>Aircraft/payen-pa100/Nasal/doors.nas</file>
+   </pa100>
+ </nasal>
+
+</PropertyList>
