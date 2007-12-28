@@ -2,7 +2,7 @@
 
 <PropertyList>
 
- <sim>
+ <sim include="Nasal/views.xml">
  
   <author>BARANGER Emmanuel (3D) David Megginson (FDM)</author>
   <aircraft-version>0.2</aircraft-version>
@@ -27,20 +27,6 @@
   <sound>
    <path>Aircraft/Generic/generic-sound.xml</path>
   </sound>
-
-  <panel>
-   <visibility archive="n">false</visibility>
-  </panel>
-  
-  <view>
-   <internal archive="y">true</internal>
-   <config>
-     <x-offset-m archive="y"> 0.000 </x-offset-m>	<!-- Right -->
-     <y-offset-m archive="y"> 0.705 </y-offset-m>	<!-- Up    -->
-     <z-offset-m archive="y"> 0.910 </z-offset-m>	<!-- Back  -->
-     <pitch-offset-deg> 0.000 </pitch-offset-deg>
-   </config>
-  </view>
 
  </sim>
 
