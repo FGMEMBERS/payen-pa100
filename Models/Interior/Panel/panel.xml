@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- alt -->
+  <model>
+    <path>Aircraft/payen-pa100/Models/Interior/Panel/Instruments/alt/altimeter.xml</path>
+    <offsets>
+      <x-m>  0.118 </x-m>
+      <y-m> -0.009 </y-m>
+      <z-m>  0.049 </z-m>
+    </offsets>
+  </model>
+
+  <!-- asi -->
+  <model>
+    <path>Aircraft/payen-pa100/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m>  0.117 </x-m>
+      <y-m> -0.104 </y-m>
+      <z-m>  0.010 </z-m>
+    </offsets>
+  </model>
+
+  <!-- fuel -->
+  <model>
+    <path>Aircraft/payen-pa100/Models/Interior/Panel/Instruments/fuel/fuel.xml</path>
+    <offsets>
+      <x-m> 0.117 </x-m>
+      <y-m> 0.089 </y-m>
+      <z-m> 0.015 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Rpm -->
+  <model>
+    <path>Aircraft/payen-pa100/Models/Interior/Panel/Instruments/rpm/rpm.xml</path>
+    <offsets>
+      <x-m>  0.118 </x-m>
+      <y-m> -0.169 </y-m>
+      <z-m> -0.073</z-m>
+    </offsets>
+  </model>
+
+  <!-- AI -->
+  <model>
+    <path>Aircraft/payen-pa100/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m>  0.116 </x-m>
+      <y-m>  0.004 </y-m>
+      <z-m> -0.050 </z-m>
+    </offsets>
+  </model>
+
+  <!-- VSI -->
+  <model>
+    <path>Aircraft/payen-pa100/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m>  0.116 </x-m>
+      <y-m> -0.075 </y-m>
+      <z-m> -0.070 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
+

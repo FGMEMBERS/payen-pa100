@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 
-<!-- <PropertyList include="pa100-jsbsim-set.xml"> -->
-<PropertyList include="pa100-yasim-set.xml">
+<!-- <PropertyList include="pa100-jsbsim-cnf.xml"> -->
+<PropertyList include="pa100-yasim-cnf.xml">
 
   <sim>
     <description>PAYEN Pa 100</description>
-    <author>BARANGER Emmanuel (3D) David Megginson (FDM)</author>
+    <author>BARANGER Emmanuel (3D/FDM)</author>
   </sim>
 
 </PropertyList>

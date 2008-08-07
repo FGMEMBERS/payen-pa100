@@ -7,7 +7,6 @@
  <animation>
    <!-- Objets opaques -->
    <object-name>fuselage</object-name>
-   <object-name>interieur</object-name>
    <object-name>aile</object-name>
    <object-name>petiteaile</object-name>
    <object-name>aileronG</object-name>
@@ -40,6 +39,16 @@
    <object-name>propdisc</object-name>
    <object-name>propblur</object-name>
  </animation>
+
+  <!-- Interieur -->
+  <model>
+    <path>Aircraft/payen-pa100/Models/Interior/interior.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.000 </z-m>
+    </offsets>
+  </model>
 
   <animation>
     <name>HeliceComplete</name>
