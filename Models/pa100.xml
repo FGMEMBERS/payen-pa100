@@ -4,6 +4,15 @@
 
  <path>pa100.ac</path>
 
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/payen-pa100/Models/Liveries", 10);
+    </load>
+    <unload>
+      livery_update.stop();
+    </unload>
+  </nasal>
+
  <animation>
    <!-- Objets opaques -->
    <object-name>fuselage</object-name>
@@ -25,6 +34,7 @@
    <object-name>tourvitre</object-name>
    <object-name>tourverriere</object-name>
    <object-name>echapp</object-name>
+
    <!-- Objets transparents -->
    <object-name>vitre</object-name>
    <object-name>verriere</object-name>
@@ -39,6 +49,33 @@
    <object-name>propdisc</object-name>
    <object-name>propblur</object-name>
  </animation>
+
+  <animation>
+    <type>material</type>
+   <object-name>fuselage</object-name>
+   <object-name>aile</object-name>
+   <object-name>petiteaile</object-name>
+   <object-name>aileronG</object-name>
+   <object-name>aileronD</object-name>
+   <object-name>profondeur</object-name>
+   <object-name>direction</object-name>
+   <object-name>roueA</object-name>
+   <object-name>roueG</object-name>
+   <object-name>roueD</object-name>
+   <object-name>bol</object-name>
+   <object-name>helice</object-name>
+   <object-name>trainA</object-name>
+   <object-name>trainG</object-name>
+   <object-name>trainD</object-name>
+   <object-name>cacheA</object-name>
+   <object-name>tourvitre</object-name>
+   <object-name>tourverriere</object-name>
+   <object-name>echapp</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+  </animation>
 
   <!-- Interieur -->
   <model>
