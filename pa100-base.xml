@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -15,7 +15,7 @@
    </startup>
 
    <sound>
-     <path>Aircraft/Generic/generic-sound.xml</path>
+     <path>Aircraft/payen-pa100/Sounds/pa100-sound.xml</path>
    </sound>
 
    <model>

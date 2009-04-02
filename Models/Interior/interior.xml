@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -7,8 +7,25 @@
   <animation>
     <!-- Objets opaques -->
     <object-name>interieur</object-name>
+    <object-name>tour</object-name>
 
     <!-- Objets transparents -->
+    <object-name>intvitre</object-name>
+    <object-name>intverriere</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>intvitre</object-name>
+    <object-name>intverriere</object-name>
+  </animation>
+
+    <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>shader.png</texture>
+    <object-name>intvitre</object-name>
+    <object-name>intverriere</object-name>
   </animation>
 
   <!-- Pilote -->
@@ -31,6 +48,28 @@
       <z-m> 0.489 </z-m>
     </offsets>
   </model>
+
+  <!-- Canopy -->
+  <animation>
+    <type>rotate</type>
+    <object-name>intverriere</object-name>
+    <property>/instrumentation/doors/crew/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep>  0 </dep></entry>
+      <entry><ind> 0.25 </ind><dep> 10 </dep></entry>
+      <entry><ind> 0.50 </ind><dep> 20 </dep></entry>
+      <entry><ind> 0.75 </ind><dep> 45 </dep></entry>
+      <entry><ind> 1.00 </ind><dep> 90 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m>  1.210 </x1-m>
+      <y1-m>  0.265 </y1-m>
+      <z1-m>  0.427 </z1-m>
+      <x2-m>  0.813 </x2-m>
+      <y2-m>  0.277 </y2-m>
+      <z2-m>  0.427 </z2-m>
+    </axis>
+  </animation>
 
 </PropertyList>
 

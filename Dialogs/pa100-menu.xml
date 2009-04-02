@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -13,15 +13,6 @@
           <script>aircraft.livery.dialog.toggle()</script>
         </binding>
       </item>
-<!--
-      <item>
-        <label>Immatriculation</label>
-        <binding>
-          <command>nasal</command>
-          <script>s55.immat_dialog.toggle()</script>
-        </binding>
-      </item>
--->
     </menu>
   </default>
 
