@@ -7,7 +7,7 @@
     <desc>Crew door</desc>
     <binding>
      <command>nasal</command>
-     <script>globals.pa100.doorsystem.crewexport();</script>
+     <script>doors.doorsystem.crewexport();</script>
     </binding>
    </key>
 
