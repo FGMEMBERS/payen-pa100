@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList> 
     
@@ -15,18 +15,12 @@
     <object-name>vitre</object-name>
   </animation>
 
-  <animation>
-    <type>noshadow</type>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/payen-pa100/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitre</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>vitre</object-name>
-  </animation>
-
+  </effect>
+  
   <animation>
     <type>material</type>
     <object-name>face</object-name>
@@ -34,10 +28,10 @@
     <object-name>needle2</object-name>
     <object-name>needle3</object-name>
     <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 
@@ -46,11 +40,6 @@
     <object-name>needle1</object-name>
     <property>/instrumentation/altimeter/indicated-altitude-ft</property>
     <factor>0.36</factor>
-    <center> 
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </center>
     <axis> 
       <x> -1 </x>
       <y>  0 </y>
@@ -63,11 +52,6 @@
     <object-name>needle2</object-name>
     <property>/instrumentation/altimeter/indicated-altitude-ft</property>
     <factor>0.036</factor>
-    <center>   
-      <x-m> 0 </x-m> 
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </center>
     <axis> 
       <x> -1 </x>
       <y>  0 </y>
@@ -80,11 +64,6 @@
     <object-name>needle3</object-name>
     <property>/instrumentation/altimeter/indicated-altitude-ft</property>
     <factor>0.0036</factor>
-    <center>  
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </center>
     <axis> 
       <x> -1 </x>
       <y>  0 </y>

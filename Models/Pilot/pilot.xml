@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -8,6 +8,7 @@
     <!-- Objets opaques -->
     <object-name>tete</object-name>
     <object-name>corps</object-name>
+    <object-name>siege</object-name>
     <object-name>brasG</object-name>
     <object-name>brasD</object-name>
     <object-name>avantbrasG</object-name>
@@ -22,28 +23,42 @@
     <object-name>lunettes</object-name>
 
     <!-- Objets transparents -->
+    <object-name>lunettesTr</object-name>
   </animation>
 
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/SPAD-VII/Models/Effects/Glass/glass</inherits-from>
+    <object-name>lunettesTr</object-name>
+  </effect>
+  
   <animation>
     <name>AnimeTete</name>
     <object-name>lunettes</object-name>
+    <object-name>lunettesTr</object-name>
     <object-name>tete</object-name>
   </animation>
 
   <animation>
-    <type>rotate</type>
+    <name>AnimeLunettes</name>
     <object-name>lunettes</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
-    <factor> 45</factor>
+    <object-name>lunettesTr</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>AnimeLunettes</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+    <factor> 45 </factor>
     <center>
       <x-m> 0.251 </x-m>
       <y-m> 0.000 </y-m>
       <z-m> 0.816 </z-m>
     </center>
     <axis>
-      <x> 0.000 </x>
-      <y> 1.000 </y>
-      <z> 0.000 </z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -58,9 +73,9 @@
       <z-m>  0.625 </z-m>
     </center>
     <axis>
-      <x> 0.000 </x>
-      <y> 1.000 </y>
-      <z> 0.000 </z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -68,16 +83,16 @@
     <type>rotate</type>
     <object-name>AnimeTete</object-name>
     <property>controls/flight/rudder</property>
-    <factor>-25</factor>
+    <factor> -25 </factor>
     <center>
       <x-m>  0.295 </x-m>
       <y-m> -0.019 </y-m>
       <z-m>  0.625 </z-m>
     </center>
     <axis>
-      <x> 0.000 </x>
-      <y> 0.000 </y>
-      <z> 1.000 </z>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
     </axis>
   </animation>
 
@@ -85,18 +100,17 @@
     <type>rotate</type>
     <object-name>AnimeTete</object-name>
     <property>surface-positions/left-aileron-pos-norm</property>
-    <factor> -10.0</factor>
+    <factor> -10 </factor>
     <center>
       <x-m>  0.295 </x-m>
       <y-m> -0.019 </y-m>
       <z-m>  0.625 </z-m>
     </center>
     <axis>
-      <x> 1.000 </x>
-      <y> 0.000 </y>
-      <z> 0.000 </z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation> 
 
 </PropertyList>
-
